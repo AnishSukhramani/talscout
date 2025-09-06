@@ -95,11 +95,22 @@ export default function Layout({ children, currentPageName }) {
           box-shadow: 8px 8px 16px var(--neu-dark), -8px -8px 16px var(--neu-light);
           border: none;
         }
+         .neu-card-alpha {
+           background: var(--neu-bg);
+           border-radius: 20px;
+          //  box-shadow: 2px 2px 4px var(--neu-dark), -2px -2px 4px var(--neu-light);
+           border: none;
+         }
         
         .neu-inset {
           background: var(--neu-bg);
           border-radius: 12px;
           box-shadow: inset 4px 4px 8px var(--neu-dark), inset -4px -4px 8px var(--neu-light);
+        }
+        .neu-inset-alpha {
+          background: #1e293b;
+          border-radius: 12px;
+          // box-shadow: inset 4px 4px 8px var(--neu-dark), inset -4px -4px 8px var(--neu-light);
         }
         
         .neu-button {
@@ -160,7 +171,7 @@ export default function Layout({ children, currentPageName }) {
           <SidebarHeader className="bg-slate-950 p-6 flex flex-col gap-2 border-none">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 neu-card flex items-center justify-center">
+                <div className="w-12 h-12 flex items-center justify-center">
                   <Target className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
@@ -187,14 +198,14 @@ export default function Layout({ children, currentPageName }) {
           </SidebarContent>
 
           <SidebarFooter className="bg-slate-950 p-6 flex flex-col gap-2 border-none">
-            <div className="neu-inset p-4 rounded-xl">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 neu-card rounded-full flex items-center justify-center">
+            <div className="neu-inset-alpha p-4 rounded-xl">
+              <div className="flex items-center gap-3 bg-slate-800">
+                <div className="w-10 h-10 neu-card-alpha rounded-full flex items-center justify-center">
                   <Briefcase className="w-5 h-5 text-blue-600" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-black text-sm truncate">HR Professional</p>
-                  <p className="text-xs text-gray-600 truncate">Talent Acquisition</p>
+                  <p className="font-semibold text-white text-sm truncate">HR Professional</p>
+                  <p className="text-xs text-gray-400 truncate">Talent Acquisition</p>
                 </div>
               </div>
             </div>
